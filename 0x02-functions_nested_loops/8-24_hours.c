@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 
 /**
  * jack_bauer -> Prints every minute of the day of Jack Bauer,
