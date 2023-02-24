@@ -1,24 +1,25 @@
 #include <stdio.h>
+
 /**
  * main -> Prints the largest prime factor of a number
+ *
  * Return: Always (0) Success
  */
 int main(void)
 {
-	unsigned int x = 2;
-	unsigned long y = 612852475143;
+	unsigned int a = 2;
+	unsigned long n = 612852475143;
 
-	while (x != y)
+	while (a != n)
 	{
-		if (y % x == 0)
+		if (n % a == 0)
 		{
-			y = y / x;
+			n = n / a;
 		} else
 		{
 			a++;
 		}
 	}
 	printf("%lu\n", n);
-
 	return (0);
 }
