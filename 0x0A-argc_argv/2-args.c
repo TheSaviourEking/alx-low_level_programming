@@ -1,20 +1,17 @@
-#include "main.h"
-#include "stdio.h"
-#include "stdlib.h"
+#include "holberton.h"
+#include <stdio.h>
 
 /**
- * main -> Prints all arguments it receives
- * @argc: Argument Count
- * @argv: Argument values
- *
- * Return: (0) SUCCESS
+ * main - A program that prints all arguements it receives
+ * @argc: The arguement counter
+ * @argv: The arguement values
+ * Return: Always 0 (Success)
  */
-
 int main(int argc, char **argv)
 {
 	while (argc--)
 	{
 		printf("%s\n", *argv++);
 	}
-	exit(EXIT_SUCCESS);
+	return (0);
 }
