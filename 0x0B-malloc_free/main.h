@@ -3,7 +3,8 @@
 
 /* Headers */
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>i
+#include <string.h>
 
 /* Functions */
 int _putchar(char c);
