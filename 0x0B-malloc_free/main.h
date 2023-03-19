@@ -3,7 +3,7 @@
 
 /* Headers */
 #include <stdio.h>
-#include <stdlib.h>i
+#include <stdlib.h>
 #include <string.h>
 
 /* Functions */
