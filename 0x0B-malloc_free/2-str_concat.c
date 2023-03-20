@@ -23,31 +23,29 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
+	
+	newString = malloc((sizeof(char) * (strlen(s1) + strlen(s2)) + 1));
+
+	if (newString == NULL)
+	{
+		return (NULL);
+	}
 	else
 	{
-		newString = malloc((sizeof(char) * (strlen(s1) + strlen(s2)) + 1));
-
-		if (newString == NULL)
+		while (i < strlen(s1))
 		{
-			return (NULL);
+			newString[i] = s1[i];
+
+			i++;
 		}
-		else
+
+		while (j < strlen(s2))
 		{
-
-			while (i < strlen(s1))
-			{
-				newString[i] = s1[i];
-
-				i++;
-			}
-
-			while (j < strlen(s2))
-			{
-				newString[i + j] = s2[j];
-				j++;
-			}
-			newString[i + j] = '\0';
+			newString[i + j] = s2[j];
+			j++;
 		}
+		newString[i + j] = '\0';
 	}
+
 	return (newString);
 }
