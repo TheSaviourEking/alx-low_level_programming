@@ -18,12 +18,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 
 	/* Malloc the area and zero it out */
-	else
-	{
-		if (p == NULL)
-			return (NULL);
-		p = malloc(nmemb * size);
-		bzero(p, nmemb * size);
-		return (p);
-	}
+	if (p == NULL)
+		return (NULL);
+	p = malloc(nmemb * size);
+	bzero(p, nmemb * size);
+	return (p);
 }
