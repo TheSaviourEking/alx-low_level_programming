@@ -1,4 +1,5 @@
-#include "function_pointers.h"
+#include "function_pointers.h"i
+#include <stdlib.h>
 
 /**
  * int_index -> Functions that searches for an integer
@@ -28,4 +29,3 @@ int int_index(int *array, int size, int (*cmp)(int))
 		}
 	}
 }
-
